@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 647958133}
   speedOFCamer: 0.5
-  offset: {x: 0, y: 8.31, z: -2.04}
+  distanceToCamera: {x: 0, y: 8.31, z: -2.04}
   rotation: 57.8
 --- !u!81 &693870125
 AudioListener:

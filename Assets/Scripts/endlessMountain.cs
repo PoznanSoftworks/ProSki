@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class endlessMountain : MonoBehaviour {
+public class EndlessMountain : MonoBehaviour {
 
 
 
