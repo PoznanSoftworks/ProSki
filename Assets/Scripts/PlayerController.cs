@@ -7,10 +7,9 @@ public class PlayerController : MonoBehaviour {
 
     private ConstantForce cf;
     private Rigidbody rb;
+    private float timer = 0.0f;
+    private Boolean reset = false;
 
-    private DateTime checkTimeStart;
-    private DateTime checkTimeEnd;
-    private double tapController;
 
     void Start()
     {
@@ -19,46 +18,41 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update()
-    { 
-        
+    {
         if (Input.GetKey(KeyCode.LeftArrow))
-        { 
-            checkTimeStart = DateTime.Now;
+        {
+            timer += Time.deltaTime;
             rb.AddRelativeForce(Vector3.right * 1);
         }
 
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            tapController = DateTime.Now.Subtract(checkTimeStart).TotalSeconds;
-            //print(tapController);
-
-            if (tapController < 0.005)
+            if (timer < 0.5)
             {
-                rb.AddRelativeForce(Vector3.right * 50);
-                checkTimeStart = DateTime.Now;
-                tapController = 0;
-                print(tapController);
-            } 
+                rb.AddRelativeForce(Vector3.right * 75);
+            }
+            else
+            {
+                timer = 0;
+            }
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            checkTimeStart = DateTime.Now;
+            timer += Time.deltaTime;
             rb.AddRelativeForce(Vector3.left * 1);
         }
 
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            tapController = DateTime.Now.Subtract(checkTimeStart).TotalSeconds;
-            //print(tapController);
-            if (tapController < 0.005)
+            if (timer < 0.5)
             {
-                print(tapController);
-                rb.AddRelativeForce(Vector3.left * 50);
-                checkTimeStart = DateTime.Now;
-                tapController = 0;
+                rb.AddRelativeForce(Vector3.left * 75);
+            }
+            else
+            {
+                timer = 0;
             }
         }
-
     }
 }

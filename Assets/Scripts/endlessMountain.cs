@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class endlessMountain : MonoBehaviour {
 
-
-
     public GameObject[] mountainPrefabs;
 
     private Transform playerTransform;
@@ -46,5 +44,4 @@ public class endlessMountain : MonoBehaviour {
         spawnZ += length;
         spawnY += down;
     }
-
 }
