@@ -11,7 +11,7 @@ public class endlessMountain : MonoBehaviour {
     private float spawnZ = 0.0f;
     private float spawnY = 0.0f;
     private float length = 17.35881165388336f;
-    private float down = -10.05f;
+    private float down = -12.05f;
     private int ammountOfMountainsTiles = 5;
 
 

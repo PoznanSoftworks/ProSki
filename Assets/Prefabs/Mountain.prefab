@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33960342880774044}
   - component: {fileID: 23626575806525328}
   - component: {fileID: 65246961163096258}
-  - component: {fileID: 114426855887953532}
   m_Layer: 0
   m_Name: Mountain (2)
   m_TagString: Untagged
@@ -146,7 +145,6 @@ GameObject:
   - component: {fileID: 33512549438996250}
   - component: {fileID: 23253464943563234}
   - component: {fileID: 65804257223478954}
-  - component: {fileID: 114290228788943880}
   m_Layer: 0
   m_Name: Mountain (1)
   m_TagString: Untagged
@@ -183,7 +181,6 @@ GameObject:
   - component: {fileID: 33629097099167284}
   - component: {fileID: 23416076036723494}
   - component: {fileID: 65397899222363236}
-  - component: {fileID: 114819154867076760}
   m_Layer: 0
   m_Name: Mountain
   m_TagString: Untagged
@@ -693,45 +690,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114290228788943880
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1487713626340350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f147bd42a37ffd48b47d83bb60d6dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mountainPrefabs:
-  - {fileID: 1288537773924902}
---- !u!114 &114426855887953532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1031007579489634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f147bd42a37ffd48b47d83bb60d6dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mountainPrefabs:
-  - {fileID: 1288537773924902}
---- !u!114 &114819154867076760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1993222749965644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f147bd42a37ffd48b47d83bb60d6dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mountainPrefabs:
-  - {fileID: 1288537773924902}
 --- !u!224 &224133152297570634
 RectTransform:
   m_ObjectHideFlags: 1
