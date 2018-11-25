@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
     private float timer = 0.0f;
     private ScoreBoard scoreBoard;
-
+    public int topSpeed = 5;
 
     void Start()
     {
@@ -57,9 +57,9 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        if (rb.velocity.magnitude > 5)
+        if (rb.velocity.magnitude > topSpeed)
         {
-            rb.velocity = rb.velocity.normalized * 5;
+            rb.velocity = rb.velocity.normalized * topSpeed;
         }
 
         if (Input.GetKey(KeyCode.A))
