@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 
-public class PointForCollsion : MonoBehaviour {
+public class PointForCollsion : MonoBehaviour
+{
 
     private Rigidbody rb;
 
     float speed = new float();
 
     // Use this for initialization
-    void OnCollisionEnter(Collision colli) {
+    void OnTriggerEnter(Collider colli)
+    {
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().velocity =
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().velocity.normalized * speed;
@@ -19,14 +21,15 @@ public class PointForCollsion : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().points += 1;
             Debug.Log("Rozjebany w chuj");
         }
-		
-	}
+
+    }
 
 
 
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         speed = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().velocity.magnitude;
     }
 

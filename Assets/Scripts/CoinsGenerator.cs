@@ -35,8 +35,6 @@ void CreatCoinsInFromOfPlayer()
             {
                 if(pos != randomPosition)
                 {
-                    print("List of postion" + pos);
-                    print("randomPosition" + randomPosition);
                     newCoin.transform.position = new Vector3(randomPosition, spawnY, spawnZ);
                 }
             }
