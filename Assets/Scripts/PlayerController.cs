@@ -57,6 +57,15 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            int points = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().points;
+
+            print(points);
+            SavePlayerInfo(points);
+        }
+
+
         if (rb.velocity.magnitude > topSpeed)
         {
             rb.velocity = rb.velocity.normalized * topSpeed;
@@ -66,7 +75,7 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    public void SaveItemInfo(int points)
+    public void SavePlayerInfo(int points)
     {
      string readMeText;
      string path = null;
@@ -95,7 +104,7 @@ public class PlayerController : MonoBehaviour {
 
             using (StreamWriter writer = new StreamWriter(fs))
             {
-                writer.WriteLine(readMeText  + localDate+ " " + (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().name + " Points " + Score));
+                writer.WriteLine(readMeText  + localDate+ " Player -  " + (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().name + " Points " + Score));
             }
 
 

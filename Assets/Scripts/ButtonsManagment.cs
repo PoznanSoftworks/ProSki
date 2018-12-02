@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 /// This class is used as Menu for start of game.
 /// </summary>
 public class ButtonsManagment : MonoBehaviour {
+
+
+
     [Header("ButtonsMenu")]
     public Button start;
     public Button scoreBoard;

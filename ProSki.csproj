@@ -319,9 +319,12 @@
     <Compile Include="Assets\Scripts\CoinsGenerator.cs" />
     <Compile Include="Assets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\Scripts\EndlessMountain.cs" />
+    <Compile Include="Assets\Scripts\EnterName.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PointForCollsion.cs" />
+    <Compile Include="Assets\Scripts\ReadScoreFromBoard.cs" />
+    <Compile Include="Assets\Scripts\ScoreBackButton.cs" />
     <Compile Include="Assets\Scripts\ScoreBoard.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
