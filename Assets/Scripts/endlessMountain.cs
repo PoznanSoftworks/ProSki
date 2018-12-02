@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EndlessMountain : MonoBehaviour {
-
-
 
     public GameObject[] mountainPrefabs;
 
@@ -13,7 +9,7 @@ public class EndlessMountain : MonoBehaviour {
     private float spawnZ = 0.0f;
     private float spawnY = 0.0f;
     private float length = 17.35881165388336f;
-    private float down = -10.05f;
+    private float down = -10.5f;
     private int ammountOfMountainsTiles = 5;
 
 
@@ -27,9 +23,10 @@ public class EndlessMountain : MonoBehaviour {
         }
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    // Update is called once per frame
+    void Update () {
 		if(playerTransform.position.z > (spawnZ - ammountOfMountainsTiles * length))
         {
             SpawnMounatin();
@@ -46,5 +43,4 @@ public class EndlessMountain : MonoBehaviour {
         spawnZ += length;
         spawnY += down;
     }
-
 }

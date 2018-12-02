@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour {
     public Transform target;
 
     public float speedOFCamer = 0.5f;
-    public Vector3 distanceToCamera;
+    public Vector3 offset;
     public float rotation;
 
     private void Start()
@@ -16,8 +16,8 @@ public class CameraFollow : MonoBehaviour {
 
     void LateUpdate()
     {
-        Vector3 newPosition = target.position + distanceToCamera;
-        Vector3 smoothedChangePositionForCamera = Vector3.Lerp(target.position, newPosition, speedOFCamer);
-        transform.position = smoothedChangePositionForCamera;
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(target.position, desiredPosition, speedOFCamer);
+        transform.position = smoothedPosition;
     }
 }
