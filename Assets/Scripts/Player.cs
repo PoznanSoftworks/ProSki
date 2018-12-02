@@ -6,5 +6,5 @@ public class Player : MonoBehaviour {
 
     public int points;
     public string name;
-
+    public float speed;
 }

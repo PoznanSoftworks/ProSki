@@ -164,7 +164,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 84577827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -439,80 +439,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4987215553533438, guid: 0d8c1bac27f29414db98e8969d478477, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54051866995700002, guid: 0d8c1bac27f29414db98e8969d478477,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54051866995700002, guid: 0d8c1bac27f29414db98e8969d478477,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 75769806495439836, guid: 0d8c1bac27f29414db98e8969d478477,
-        type: 2}
-      propertyPath: m_RelativeForce.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 75769806495439836, guid: 0d8c1bac27f29414db98e8969d478477,
-        type: 2}
-      propertyPath: m_RelativeForce.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324536299588990, guid: 0d8c1bac27f29414db98e8969d478477,
-        type: 2}
-      propertyPath: topSpeed
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d8c1bac27f29414db98e8969d478477, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &2071822582 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1046095575593386, guid: 0d8c1bac27f29414db98e8969d478477,
-    type: 2}
-  m_PrefabInternal: {fileID: 1953552661}
 --- !u!4 &2071822583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4987215553533438, guid: 0d8c1bac27f29414db98e8969d478477,
     type: 2}
   m_PrefabInternal: {fileID: 1953552661}
---- !u!114 &2071822584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071822582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea7c66398fb61948ba6de75b5303d52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 0
-  name: Placek
---- !u!114 &2071822585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071822582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8427f0c0c3622964e903eb6e7b007962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2071822591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071822582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289823ba0811b6741a946e34765feba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

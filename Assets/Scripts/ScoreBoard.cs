@@ -9,8 +9,6 @@ public class ScoreBoard : MonoBehaviour
 
     private string gameDataFileName = "data.json";
 
-
-
     public void SubmitNewPlayerScore(int newScore)
     {
         // If newScore is greater than playerProgress.highestScore, update playerProgress with the new value and call SavePlayerProgress()

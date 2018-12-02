@@ -62,12 +62,6 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = rb.velocity.normalized * topSpeed;
         }
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            int points = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().points;
-            print(points);
-            SaveItemInfo(points);
-        }
 
     }
 
