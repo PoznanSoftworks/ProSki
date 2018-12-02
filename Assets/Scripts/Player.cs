@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
     {
         string readMeText;
         string path = null;
-        path = "Assets/PlayerName.json";
+        path = "Assets/PlayerName.txt";
 
 
         using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite))

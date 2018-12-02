@@ -10,7 +10,7 @@ public class ReadScoreFromBoard : MonoBehaviour {
 	void Start () {
         string readMeText;
         string path = null;
-        path = "Assets/score.json";
+        path = "Assets/score.txt";
 
         DateTime localDate = DateTime.Now;
 

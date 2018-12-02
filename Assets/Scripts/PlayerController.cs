@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour {
     {
      string readMeText;
      string path = null;
-     path = "Assets/score.json";
+     path = "Assets/score.txt";
      string Score = points.ToString();
 
         DateTime localDate = DateTime.Now;
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour {
 
             using (StreamWriter writer = new StreamWriter(fs))
             {
-                writer.WriteLine(readMeText  + localDate+ " Player -  " + (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().name + " Points " + Score));
+                writer.WriteLine(readMeText  + localDate +" Player-" + GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().name + "Points " + Score);
             }
 
 

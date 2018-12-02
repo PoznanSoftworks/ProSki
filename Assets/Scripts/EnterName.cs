@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,10 +24,11 @@ public class EnterName : MonoBehaviour
     private void SubmitName(string playerName)
     {
 
-        print(playerName);
+        //print(playerName);
+        Regex.Replace(playerName, @"\s+", "");
         string path = null;
-        path = "Assets/PlayerName.json";
-
+        path = "Assets/PlayerName.txt";
+        File.WriteAllText(path, string.Empty);
 
         using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite))
         {
@@ -37,7 +39,7 @@ public class EnterName : MonoBehaviour
             }
 
         }
-
+        UnityEditor.AssetDatabase.Refresh();
         HideMenu();
     }
 

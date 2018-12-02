@@ -26,8 +26,8 @@ public class ScoreBackButton : MonoBehaviour
 
     public void StartScene()
     {
-        Debug.Log("menu");
-        SceneManager.LoadScene("menu");
+        Debug.Log("ExtraMenu");
+        SceneManager.LoadScene("ExtraMenu");
     }
 
 
