@@ -7,7 +7,11 @@ ModelImporter:
     100002: default
     400000: //RootNode
     400002: default
-    2100000: defaultMat
+    2100000: Material.004
+    2100002: Material.004_head_UV_ready.png
+    2100004: Material.004_helmet_UV_workflow.png
+    2100006: Material.004_stick_UV_ready.png
+    2100008: None
     2300000: default
     3300000: default
     4300000: default

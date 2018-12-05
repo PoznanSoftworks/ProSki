@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e44e4dd8db52f34695465cce2529347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabCoin: {fileID: 1421296562390150, guid: bb7821cf839ee2b439c019eaf1863f17, type: 2}
-  listOfCoins: []
+  prefabSnowflake: {fileID: 1709466292413796, guid: bec9c3daa131b344d8ab32432f0b1017,
+    type: 2}
+  listOfSnowflakes: []
 --- !u!4 &84577830
 Transform:
   m_ObjectHideFlags: 0
