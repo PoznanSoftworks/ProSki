@@ -1,21 +1,21 @@
 # Blender MTL File: 'character_01.blend'
 # Material Count: 5
 
-newmtl Material.004
+newmtl body
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
+Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd D:\Projects\Huga Game\UV\foot_UV_ready.png
+map_Kd D:\Projects\Huga Game\UV\body_UV_ready.png
 
-newmtl Material.004_head_UV_ready.png
+newmtl face
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
+Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
@@ -23,10 +23,21 @@ d 1.000000
 illum 2
 map_Kd D:\Projects\Huga Game\UV\head_UV_ready.png
 
-newmtl Material.004_helmet_UV_workflow.png
+newmtl foot
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd D:\Projects\Huga Game\UV\foot_UV_ready.png
+
+newmtl helmet
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
@@ -34,22 +45,13 @@ d 1.000000
 illum 2
 map_Kd D:\Projects\Huga Game\helmet_UV_workflow.png
 
-newmtl Material.004_stick_UV_ready.png
+newmtl stick
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
+Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
 map_Kd D:\Projects\Huga Game\UV\stick_UV_ready.png
-
-newmtl None
-Ns 0
-Ka 0.000000 0.000000 0.000000
-Kd 0.8 0.8 0.8
-Ks 0.8 0.8 0.8
-d 1
-illum 2
-map_Kd D:\Projects\Huga Game\UV\body_UV_ready.png

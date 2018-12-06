@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 875f2e8fd02887145b1b830d797b076e
+guid: d01517bd87e3fae4d8c123f31aa2f87b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,20 +7,20 @@ ModelImporter:
     100002: default
     400000: //RootNode
     400002: default
-    2100000: Material.004
-    2100002: Material.004_head_UV_ready.png
-    2100004: Material.004_helmet_UV_workflow.png
-    2100006: Material.004_stick_UV_ready.png
-    2100008: None
+    2100000: foot
+    2100002: body
+    2100004: stick
+    2100006: face
+    2100008: helmet
     2300000: default
     3300000: default
     4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
